@@ -633,6 +633,16 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.px-\[124\] {
+  padding-left: 124;
+  padding-right: 124;
+}
+
+.px-\[124px\] {
+  padding-left: 124px;
+  padding-right: 124px;
+}
+
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
