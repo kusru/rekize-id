@@ -1,2 +1,3 @@
 # rekize-id
-source code untuk https://rekize.my.id
+
+source code untuk <https://rekize.my.id>
