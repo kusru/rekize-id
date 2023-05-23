@@ -555,6 +555,14 @@ video {
   min-height: 100vh;
 }
 
+.w-full {
+  width: 100%;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -612,19 +620,13 @@ video {
   padding-right: 8rem;
 }
 
-.px-\[122px\] {
-  padding-left: 122px;
-  padding-right: 122px;
-}
-
-.px-\[124px\] {
-  padding-left: 124px;
-  padding-right: 124px;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-mono {
