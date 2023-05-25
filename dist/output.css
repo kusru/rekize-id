@@ -555,33 +555,8 @@ video {
   min-height: 100vh;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-64 {
   width: 16rem;
-}
-
-@keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-.animate-ping {
-  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-}
-
-@keyframes pulse {
-  50% {
-    opacity: .5;
-  }
-}
-
-.animate-pulse {
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .flex-col {
@@ -613,10 +588,6 @@ video {
   background-color: rgb(251 191 36 / var(--tw-bg-opacity));
 }
 
-.bg-amber-400\/60 {
-  background-color: rgb(251 191 36 / 0.6);
-}
-
 .bg-rose-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(244 63 94 / var(--tw-bg-opacity));
@@ -632,13 +603,27 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.p-7 {
-  padding: 1.75rem;
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
 
-.px-32 {
-  padding-left: 8rem;
-  padding-right: 8rem;
+.from-amber-400\/80 {
+  --tw-gradient-from: rgb(251 191 36 / 0.8) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(251 191 36 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.via-orange-300 {
+  --tw-gradient-to: rgb(253 186 116 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #fdba74 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.to-amber-300\/70 {
+  --tw-gradient-to: rgb(252 211 77 / 0.7) var(--tw-gradient-to-position);
+}
+
+.p-7 {
+  padding: 1.75rem;
 }
 
 .py-3 {
