@@ -597,21 +597,6 @@ video {
   border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
 }
 
-.divide-amber-100 > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-opacity: 1;
-  border-color: rgb(254 243 199 / var(--tw-divide-opacity));
-}
-
-.divide-amber-50 > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-opacity: 1;
-  border-color: rgb(255 251 235 / var(--tw-divide-opacity));
-}
-
-.divide-zinc-50 > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-opacity: 1;
-  border-color: rgb(250 250 250 / var(--tw-divide-opacity));
-}
-
 .divide-zinc-100 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgb(244 244 245 / var(--tw-divide-opacity));
@@ -718,11 +703,6 @@ video {
   color: rgb(244 63 94 / var(--tw-text-opacity));
 }
 
-.text-zinc-500 {
-  --tw-text-opacity: 1;
-  color: rgb(113 113 122 / var(--tw-text-opacity));
-}
-
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
@@ -736,10 +716,6 @@ video {
 
 .hover\:bg-zinc-300\/40:hover {
   background-color: rgb(212 212 216 / 0.4);
-}
-
-.hover\:bg-amber-300\/40:hover {
-  background-color: rgb(252 211 77 / 0.4);
 }
 
 @media (min-width: 768px) {
@@ -794,52 +770,8 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:w-36 {
-    width: 9rem;
-  }
-
-  .lg\:w-max {
-    width: -moz-max-content;
-    width: max-content;
-  }
-
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .lg\:grid-rows-none {
-    grid-template-rows: none;
-  }
-
-  .lg\:divide-x-2 > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-x-reverse: 0;
-    border-right-width: calc(2px * var(--tw-divide-x-reverse));
-    border-left-width: calc(2px * calc(1 - var(--tw-divide-x-reverse)));
-  }
-
-  .lg\:divide-y-0 > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-y-reverse: 0;
-    border-top-width: calc(0px * calc(1 - var(--tw-divide-y-reverse)));
-    border-bottom-width: calc(0px * var(--tw-divide-y-reverse));
-  }
-
-  .lg\:rounded-b-none {
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-  }
-
-  .lg\:rounded-l-lg {
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
-  }
-
-  .lg\:rounded-r-lg {
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-  }
-
-  .lg\:rounded-t-none {
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
