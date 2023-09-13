@@ -643,13 +643,13 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.via-orange-300 {
-  --tw-gradient-to: rgb(253 186 116 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #fdba74 var(--tw-gradient-via-position), var(--tw-gradient-to);
+.via-orange-400\/60 {
+  --tw-gradient-to: rgb(251 146 60 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(251 146 60 / 0.6) var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
-.to-amber-300\/70 {
-  --tw-gradient-to: rgb(252 211 77 / 0.7) var(--tw-gradient-to-position);
+.to-amber-300\/80 {
+  --tw-gradient-to: rgb(252 211 77 / 0.8) var(--tw-gradient-to-position);
 }
 
 .fill-none {
