@@ -534,8 +534,16 @@ video {
   bottom: 0.75rem;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -544,6 +552,10 @@ video {
 
 .grid {
   display: grid;
+}
+
+.h-5 {
+  height: 1.25rem;
 }
 
 .max-h-max {
@@ -640,6 +652,14 @@ video {
   --tw-gradient-to: rgb(252 211 77 / 0.7) var(--tw-gradient-to-position);
 }
 
+.fill-none {
+  fill: none;
+}
+
+.stroke-sky-500 {
+  stroke: #0ea5e9;
+}
+
 .p-7 {
   padding: 1.75rem;
 }
@@ -672,8 +692,8 @@ video {
   line-height: 1.75rem;
 }
 
-.font-black {
-  font-weight: 900;
+.font-bold {
+  font-weight: 700;
 }
 
 .font-medium {
@@ -728,8 +748,8 @@ video {
     width: max-content;
   }
 
-  .md\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .md\:grid-rows-none {
