@@ -7,5 +7,9 @@
   },
   "dependencies": {
     "alpinejs": "^3.12.1"
+  },
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "min": "npx tailwindcss -o dist/output.min.css --minify"
   }
 }
