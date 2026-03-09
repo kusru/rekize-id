@@ -1,15 +1,13 @@
 {
-  "devDependencies": {
-    "laravel-mix": "^6.0.49",
-    "prettier": "^2.8.8",
-    "prettier-plugin-tailwindcss": "^0.3.0",
-    "tailwindcss": "^3.3.2"
-  },
+  "name": "rekize-id",
+  "version": "1.0.0",
   "dependencies": {
-    "alpinejs": "^3.12.1"
+    "@tailwindcss/cli": "^4.2.1",
+    "alpinejs": "^3.12.1",
+    "tailwindcss": "^4.2.1"
   },
   "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "min": "npx tailwindcss -o dist/output.min.css --minify"
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch",
+    "min": "npx @tailwindcss/cli -o dist/output.min.css --minify"
   }
 }
