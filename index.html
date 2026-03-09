@@ -24,31 +24,49 @@
   <title>rekize</title>
 </head>
 
-<!-- <body class="bg-linear-to-tr from-amber-300 to-rose-300"> -->
-  <body>
+
+
+<body class="text-black">
   <main class="relative flex min-h-screen flex-col content-center items-center justify-center font-mono">
     <div
-      class="flex max-h-max flex-col content-center items-center justify-center rounded-xl bg-white p-7 text-center shadow-lg shadow-slate-600/50">
-      <h2 class="text-3xl font-bold">Get In Touch</h2>
-      <div
-        class="mt-5 grid w-64 grid-rows-4 place-items-center content-center items-center justify-items-center divide-y-2 divide-zinc-100 text-xl font-semibold md:w-max md:grid-cols-5 md:grid-rows-none md:divide-x-2 md:divide-y-0">
-        <a class="w-56 rounded-t-lg py-3 text-center text-lg hover:bg-zinc-300/40 md:w-36 md:rounded-l-lg md:rounded-t-none lg:text-xl"
-          href=" https://saweria.co/rekize" rel="noopener noreferrer"></span>Saweria</a>
-        <a class="w-56 py-3 text-center text-lg hover:bg-zinc-300/40 md:w-36 lg:text-xl" href="https://twitch.tv/rekize"
-          rel="noopener noreferrer">Twitch</a>
-        <a class="w-56 py-3 text-center text-lg hover:bg-zinc-300/40 md:w-36 lg:text-xl"
-          href="https://www.youtube.com/@rekize" rel="noopener noreferrer">
-          YouTube
-        </a>
-        <a class="w-56 py-3 text-center text-lg hover:bg-zinc-300/40 md:w-36 lg:text-xl"
-          href="https://www.instagram.com/zaann_n" rel="noopener noreferrer">
-          Instagram
-        </a>
-        <a class="w-56 rounded-b-lg py-3 text-center text-lg hover:bg-zinc-300/40 md:w-36 md:rounded-b-none md:rounded-r-lg lg:text-xl"
-          href="mailto:rekize@protonmail.com" rel="noopener noreferrer">
-          E-Mail
-        </a>
-      </div>
+      class="flex max-h-max flex-col content-center items-center justify-center rounded-xl border-4 border-black bg-white p-8 text-center shadow-[8px_8px_0_0_#000]">
+      <h2 class="text-4xl font-black uppercase tracking-tight">rekize</h2>
+      <ul x-data="{ links: [
+        {
+          name: 'Tako',
+          url: 'https://tako.id/rekize',
+          color: 'hover:bg-blue-600 hover:text-white'
+        },
+        {
+          name: 'Twitch',
+          url: 'https://twitch.tv/rekize',
+          color: 'hover:bg-purple-600 hover:text-white'
+        },
+        {
+          name: 'YouTube',
+          url: 'https://www.youtube.com/@rekize',
+          color: 'hover:bg-red-600 hover:text-white'
+        },
+        {
+          name: 'Instagram',
+          url: 'https://www.instagram.com/zaann_n',
+          color: 'hover:bg-pink-600 hover:text-white'
+        },
+        {
+          name: 'E-Mail',
+          url: 'mailto:rekize@protonmail.com',
+          color: 'hover:bg-sky-600 hover:text-white'
+        }
+      ] }"
+        class="mt-6 flex w-full flex-col items-center gap-3 text-xl font-semibold sm:flex-row sm:flex-wrap sm:justify-center md:w-max md:flex-nowrap md:gap-1 lg:gap-3">
+
+        <template x-for="link in links" :key="link.name">
+          <a class="block w-64 rounded-lg border-[3px] border-black bg-white py-3 text-center text-lg font-bold gap-3 shadow-[6px_6px_0_0_#000] transition-all duration-200 hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[3px_3px_0_0_#000] active:translate-x-[6px] active:translate-y-[6px] active:shadow-none sm:w-40 md:w-32 lg:w-40 lg:text-xl"
+            :class="link.color" :href="link.url" rel="noopener noreferrer">
+            <span x-text="link.name" class="block"></span>
+          </a>
+        </template>
+      </ul>
     </div>
 
     <footer class="absolute bottom-3 text-lg font-medium">
@@ -58,4 +76,5 @@
     </footer>
   </main>
 </body>
+
 </html>
