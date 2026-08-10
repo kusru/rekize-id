@@ -7,7 +7,7 @@
     "tailwindcss": "^4.2.1"
   },
   "scripts": {
-    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch",
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch",
     "min": "npx @tailwindcss/cli -o dist/output.min.css --minify"
   }
 }

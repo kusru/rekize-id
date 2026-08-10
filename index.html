@@ -21,6 +21,7 @@
   <meta name="msvalidate.01" content="F2F86F2BE6DAEB6329849DD5BFA2D661" />
   <meta property="og:locale" content="id_ID" />
   <script defer src="dist/app.js"></script>
+  <script defer src="script.js"></script>
   <title>rekize</title>
 </head>
 
@@ -30,7 +31,7 @@
   <main class="relative flex min-h-screen flex-col content-center items-center justify-center font-mono">
     <div
       class="flex max-h-max flex-col content-center items-center justify-center rounded-xl border-4 border-black bg-white p-8 text-center shadow-[8px_8px_0_0_#000]">
-      <h2 class="text-4xl font-black uppercase tracking-tight">rekize</h2>
+      <h1 class="text-4xl font-black uppercase tracking-tight">rekize</h1>
       <ul x-data="{ links: [
         {
           name: 'Tako',
@@ -66,7 +67,7 @@
         class="mt-6 flex w-full flex-col items-center gap-3 text-xl font-semibold sm:flex-row sm:flex-wrap sm:justify-center md:w-max md:flex-nowrap md:gap-1 lg:gap-3">
 
         <template x-for="link in links" :key="link.name">
-          <a class="block w-64 rounded-lg border-[3px] border-black bg-white py-3 text-center text-lg font-bold gap-3 shadow-[6px_6px_0_0_#000] transition-all duration-200 hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[3px_3px_0_0_#000] active:translate-x-[6px] active:translate-y-[6px] active:shadow-none sm:w-40 md:w-32 lg:w-40 lg:text-xl"
+          <a class="block w-64 rounded-lg border-[3px] border-black bg-white py-3 text-center text-lg font-bold gap-3 shadow-[6px_6px_0_0_#000] transition-all duration-200 hover:translate-x-0.75 hover:translate-y-0.75 hover:shadow-[3px_3px_0_0_#000] active:translate-x-1.5 active:translate-y-1.5 active:shadow-none sm:w-40 md:w-32 lg:w-40 lg:text-xl"
             :class="link.color" :href="link.url" rel="noopener noreferrer">
             <span x-text="link.name" class="block"></span>
           </a>
